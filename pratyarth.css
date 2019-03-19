@@ -1,0 +1,353 @@
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+
+* 
+{
+  box-sizing:border-box;
+}
+
+html,body
+{
+  height: 100%;
+  margin:0;
+}
+
+button 
+{
+  background-color: transparent;
+  font-family: Josefin Sans;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: .15em;
+}
+
+button:hover
+{
+  background: dodgerblue;
+  border: 1px solid dodgerblue;
+  transition-duration: 0.4s;
+  color: white;
+}
+
+
+.bg 
+{
+  background: url("dna_challenge_copia.jpg") no-repeat center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+#main-title
+{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .15em;
+  top:30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: typing 2s steps(40, end), blink-caret .2s step-end infinite;
+  font-family: Josefin Slab;
+  font-weight: 700;
+  font-size: 75px;
+  color: black;
+  position: absolute;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#main-subtext
+{
+  font-family: Josefin Slab;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 40px;
+  color: white;
+  top:70%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: black; 
+  opacity: 0.8;
+  border-radius: 15px; 
+  padding: 15px;
+}
+
+.content
+{
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+
+.content h2
+{
+  text-align: center;
+  font-size: 60px;
+  font-family: Josefin Sans;
+  font-weight: 700;
+  letter-spacing: .15em;
+  padding: 20px 0px;
+
+}
+
+.content p
+{
+  font-family: Josefin Slab;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-100
+{
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+
+.column-50
+{
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.column-25
+{
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.column-66 
+{
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 
+{
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.card 
+{
+  margin: 8px;
+  padding: 8px;
+  text-align: center;
+}
+
+.card h3
+{
+  font-family: Josefin Sans;
+  font-weight: 600;
+}
+
+.card p
+{
+  font-family: Josefin Slab;
+  font-weight: 600;
+  color:black;
+  text-align: left;
+  border-top: 5px solid black;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 2;
+}
+
+#talk
+{
+  font-family: Josefin Sans;
+  font-weight:600;
+  color: dimgray;
+}
+
+
+h4,h5
+{
+  text-align: center;
+  font-family: Josefin Sans;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
+
+.topnav 
+{
+  position: fixed;
+  top: -150px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  padding-right: 50px;
+  background-color: WhiteSmoke;
+  z-index: 99;
+  border-bottom: 0.5px solid lime;
+}
+
+.topnav a 
+{
+  font-family: Josefin Sans;
+  font-weight: 600;
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover 
+{
+  color: lime;
+  transition-duration: 0.4s;
+}
+
+
+.topnav .icon 
+{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+button
+{
+  text-decoration: none;
+
+}
+
+table
+{
+  border-collapse: collapse;
+  width: 60%;
+  color: #00FFFF;
+  text-align: left;
+}
+
+th
+{
+  font-family: Josefin Sans;
+  font-weight: 600;
+  font-size: 24px;
+  border-bottom: 2px solid #727B84;
+  padding: 10px;
+}
+
+td
+{
+  font-family: Josefin Slab;
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 2px solid #727B84;
+  padding: 10px;
+}
+
+
+#deadline
+{
+  font-family: Josefin Slab;
+  font-weight: 700;
+  font-size: 60px;
+  background-color: white; opacity: 0.7;
+  color: navy;
+  padding: 25px;
+  border-radius: 15px;
+
+}
+
+@media screen and (max-width: 600px)
+{
+  .column-100, .column-66, .column-50, .column-33
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  img
+  {
+    width: 75%;
+    margin: auto;
+  }
+
+  table
+  {
+    width: 100%;
+    margin: auto;
+  }
+
+  #main-title
+  {
+    font-size: 35px;
+  }
+
+  #main-subtext
+  {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 600px)
+{
+  .column-25
+  {
+    width: 100%;
+    text-align: center;
+  }
+}
+
